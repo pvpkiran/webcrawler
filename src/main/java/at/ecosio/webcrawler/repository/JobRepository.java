@@ -15,6 +15,7 @@ import static at.ecosio.webcrawler.dto.Status.SUBMITTED;
 
 @Service
 public class JobRepository {
+    // In memory Data Store
     private final Map<Job, Set<String>> JOBS = new ConcurrentHashMap<>();
 
     public Job submitUrlForWebcrawler(String url) {
