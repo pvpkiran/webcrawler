@@ -50,7 +50,7 @@ public class Webcrawler {
         final Set<String> initialLinksSet = new TreeSet<>();
         initialLinksSet.add(job.getUrl());
 
-        String baseDomain = null;
+        String baseDomain;
         try {
             baseDomain = extractDomain(job.getUrl());
         } catch (MalformedURLException | URISyntaxException | IllegalArgumentException e) {
